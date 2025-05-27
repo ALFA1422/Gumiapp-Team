@@ -1,3 +1,3 @@
 FROM mattermost/mattermost-team-edition:latest
-
+ENV MM_SQLSETTINGS_DATASOURCE=postgres://mattermost_db_73a5_user:jSMZsNIE7lJWKblkudC1mgtYVMqEdgD1@dpg-d0qruebe5dus739rrnd0-a/mattermost_db_73a5?sslmode=disable
 EXPOSE 8065
