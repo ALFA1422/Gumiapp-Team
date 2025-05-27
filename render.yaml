@@ -1,11 +1,9 @@
 services:
-  - type: web
+  - type: docker-compose
     name: mattermost
-    env: docker
     plan: free
     repo: https://github.com/ALFA1422/Gumiapp-Team
     region: frankfurt
     branch: main
-    dockerComposePath: ./docker-compose.yml
-    healthCheckPath: /
+    dockerComposeFilePath: ./docker-compose.yml
     autoDeploy: true
