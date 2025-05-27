@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mattermost
+    env: docker
+    plan: free
+    repo: https://github.com/ALFA1422/Gumiapp-Team
+    region: frankfurt
+    branch: main
+    dockerfilePath: ./docker-compose.yml
+    healthCheckPath: /
+    autoDeploy: true
