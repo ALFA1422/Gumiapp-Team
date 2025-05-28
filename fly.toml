@@ -1,0 +1,21 @@
+app = "gumiapp-team"
+primary_region = "cdg"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  PORT = "8065"
+  MM_SERVICESETTINGS_LISTENADDRESS=":8065"
+
+[[services]]
+  internal_port = 8065
+  protocol = "tcp"
+  ports = [
+    { port = 80, handlers = ["http"] },
+    { port = 443, handlers = ["tls", "http"] }
+  ]
+
+[mounts]
+  source = "mattermost_data"
+  destination = "/mattermost/data"
