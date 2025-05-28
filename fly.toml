@@ -13,9 +13,10 @@ primary_region = 'cdg'
   strategy = 'immediate'
 
 [env]
-  MM_SQLSETTINGS_DATASOURCE = "postgresql://mattermost_db_73a5_user:jSMZsNIE7lJWKblkudC1mgtYVMqEdgD1@dpg-d0qruebe5dus739rrnd0-a.frankfurt-postgres.render.com/mattermost_db_73a5"
-  MM_SERVICESETTINGS_LISTENADDRESS = ":8065"
-  PORT = "8065"
+MM_SQLSETTINGS_DATASOURCE = "postgresql://mattermost_db_73a5_user:jSMZsNIE7lJWKblkudC1mgtYVMqEdgD1@dpg-d0qruebe5dus739rrnd0-a.frankfurt-postgres.render.com/mattermost_db_73a5?sslmode=disable"
+PORT = "8065"
+MM_SERVICESETTINGS_LISTENADDRESS = ":8065"
+
 
 
 [[mounts]]
