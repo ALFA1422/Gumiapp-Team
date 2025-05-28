@@ -1,6 +1,9 @@
 app = "gumiapp-team"
 primary_region = "cdg"
 
+[deploy]
+  strategy = "immediate"
+
 [build]
   dockerfile = "Dockerfile"
 
